@@ -6,9 +6,9 @@ import net.minestom.server.inventory.InventoryType;
 
 public class CraftingTableUI {
 
-    public static void init(Player player) {
-        Inventory inventory = new Inventory(InventoryType.CRAFTING, "Crafting Table");
+    private static final Inventory inventory = new Inventory(InventoryType.CRAFTING, "Crafting Table");
 
+    public static void init(Player player) {
         inventory.addViewer(player);
     }
 
